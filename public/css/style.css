@@ -1,0 +1,48 @@
+
+.clear {
+    clear: both;
+}
+body{
+    min-width: 1300px;
+    max-width: 1500px;
+}
+header {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    background: transparent;
+}
+.menu{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #3276b1;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+    display: block;
+    margin: 10px;
+}
+.menu ul li a{
+    color: #ff0;
+}
+#parallax{
+    width: 100%;
+    height: auto;
+}
+.mall-bg{
+    background-image:url('../images/shoppingmall-bg.jpg');
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+footer {
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #F7F5F5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 10px 10px 0px;
+    color: #2B2B2B;
+}
+
