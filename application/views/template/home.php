@@ -2,17 +2,31 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <script type='text/javascript' src='<?= base_url('public') ?>/js/jquery-1.7.1.js'></script>
-
-        <script type="text/javascript" src="<?= base_url('public') ?>/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?= base_url('public') ?>/js/21.js"></script>
         <link href="<?= base_url('public') ?>/css/bootstrap.min.css" rel="stylesheet"
               type="text/css" />
 
         <link href="<?= base_url('public') ?>/css/style.css" rel="stylesheet"
               type="text/css" />
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#parallax").height($(window).height());
+                $(window).mousemove(function(e) {
+                    console.log(e.screenX);
+                    parallax(e);
+                });
+            });
+
+            function parallax(e) {
+                var amountMovedX = (e.pageX * -1 / 6);
+                var amountMovedY = (e.pageY * -1 / 6);
+                $("#parallax").css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+            }
+
+        </script>
     </head>
     <body>
 
@@ -52,18 +66,6 @@
     </div>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#parallax").height($(window).height());
-
-
-        });
-        document.addEventListener("DOMContentLoaded", function() {
-            initParallax();
-        });
-
-
-    </script>
 </body>
 
 </html>

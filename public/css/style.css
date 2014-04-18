@@ -2,6 +2,9 @@
 .clear {
     clear: both;
 }
+a:hover{
+    text-decoration: none;
+}
 body{
     min-width: 1300px;
     max-width: 1500px;
@@ -26,6 +29,8 @@ header {
 }
 .menu ul li a{
     color: #ff0;
+    font-size: 16px;
+    font-weight: bold;
 }
 #parallax{
     width: 100%;
