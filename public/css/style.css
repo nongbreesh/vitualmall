@@ -35,11 +35,43 @@ header {
 #parallax{
     width: 100%;
     height: auto;
+    position: relative;
 }
 .mall-bg{
     background-image:url('../images/shoppingmall-bg.jpg');
     background-position: center bottom;
-    background-size: 100% auto;
+    background-size: 120%;
+}
+.shop{
+    width: 150px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 4px 8px 14px #000;
+}
+.shop img{
+    width: 100% !important;
+    border-radius: 5px;
+    /* box-shadow: -3px 2px 7px #000; */
+}
+.shop1{
+    left: 10px;
+    top:300px;
+    border: 5px #EB3838 solid;
+}
+.shop2{
+    left: 500px;
+    top:280px;
+    border: 5px #990581 solid;
+}
+.shop3{
+    right: 500px;
+    bottom: 40px;
+    border: 5px #443422 solid;
+}
+.shop4{
+    right: 10px;
+    top:300px;
+    border: 5px #dee333 solid;
 }
 footer {
     height: 40px;
@@ -50,4 +82,5 @@ footer {
     padding: 10px 10px 10px 0px;
     color: #2B2B2B;
 }
+
 
